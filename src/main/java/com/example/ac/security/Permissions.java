@@ -19,7 +19,7 @@ public class Permissions {
 		return false;
 	}
 
-	public boolean isWritableWritable(RoleAuthUser roleAuthUser, Demo demo) {
+	public boolean isWritable(RoleAuthUser roleAuthUser, Demo demo) {
 		if (!roleAuthUser.hasRole("set")) {
 			return false;
 		}

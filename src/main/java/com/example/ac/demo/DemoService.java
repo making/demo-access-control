@@ -28,7 +28,7 @@ public class DemoService {
 		return demo;
 	}
 
-	@PreAuthorize("@permissions.isWritableWritable(principal.roleAuthUser, #demo)")
+	@PreAuthorize("@permissions.isWritable(principal.roleAuthUser, #demo)")
 	public Demo setDemo(@P("demo") Demo d) {
 		Demo demo = find();
 		if (d.getA() != null) {
